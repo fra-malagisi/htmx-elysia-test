@@ -1,0 +1,33 @@
+{
+  "name": "sample-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "bun --watch src/index.ts",
+    "format": "prettier --write .",
+    "build:css": "postcss styles.css -o dist/styles.css",
+    "watch:css": "postcss styles.css -o dist/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@elysiajs/cors": "^0.7.1",
+    "@elysiajs/static": "^0.7.1",
+    "autoprefixer": "^10.4.16",
+    "elysia": "^0.7.15",
+    "htmx": "^0.0.2"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "postcss-cli": "^10.1.0",
+    "postcss-nested": "^6.0.1",
+    "prettier": "^3.0.3",
+    "tailwindcss": "^3.3.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
