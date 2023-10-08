@@ -1,4 +1,4 @@
-# HTMX Elysia (testapp)
+# HTMX ELYSIA TAILWIND (testapp)
 
 To install dependencies:
 
