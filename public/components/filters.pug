@@ -1,0 +1,5 @@
+include ../mixins/select.pug
+form.flex 
+  div.flex.flex-col
+    +select("nationality", "nationality", "Nationality", [{value: "AU", text: "Australian"}, {value: "BR", text: "Brazilian"}])
+

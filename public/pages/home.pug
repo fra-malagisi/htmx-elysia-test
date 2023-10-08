@@ -1,4 +1,5 @@
 extends ../layout.pug
 block content
+  include ../components/filters.pug 
   div(id="data-container")
-  button.button__primary(hx-get="http://localhost:8080/random-user", hx-target="#data-container") Load Data
+  button.button__primary(hx-get="http://localhost:8080/random-user", hx-target="#data-container") Generate user
