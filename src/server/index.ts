@@ -5,7 +5,7 @@ import staticPlugin from "@elysiajs/static";
 const app = new Elysia().use(cors()).use(staticPlugin());
 
 app.get("/styles.css", () => Bun.file("dist/styles.css"));
-app.get("/", () => Bun.file("dist/index.html"));
+app.get("/", () => Bun.file("public/pages/index.html"));
 
 app.get("/random-user", async () => {
   const response = await fetch("https://randomuser.me/api/");
