@@ -15,10 +15,10 @@
   "license": "ISC",
   "dependencies": {
     "@elysiajs/cors": "^0.7.1",
-    "@elysiajs/static": "^0.7.1",
     "autoprefixer": "^10.4.16",
     "elysia": "^0.7.15",
-    "htmx": "^0.0.2"
+    "htmx": "^0.0.2",
+    "pug": "^3.0.2"
   },
   "devDependencies": {
     "bun-types": "latest",

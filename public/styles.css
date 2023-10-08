@@ -8,6 +8,12 @@
 .main {
   @apply px-32 pt-4 flex flex-col justify-center items-center;
 }
+.header {
+  @apply flex p-2 bg-slate-200 border-b-4 border-yellow-200;
+  &__title {
+    @apply text-lg text-green-800 font-bold;
+  }
+}
 .button {
   &__primary {
     @apply bg-green-800 rounded-sm p-2 w-32 text-white;
