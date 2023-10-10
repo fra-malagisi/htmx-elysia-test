@@ -2,10 +2,11 @@ extends ../layout.pug
 block content
   button( _=`on click 
               toggle .hidden on #filters then
-              if my.innerText == 'Open Filters' 
+              if my.innerText == 'Open filters' 
                 set my.innerText to 'Close filters' 
               otherwise  
-                set my.innerText to 'Open filters'`) Open Filters
+                set my.innerText to 'Open filters'
+              `) Open filters
   div.hidden(id="filters")
     include ../components/filters.pug
   div(id="data-container")
