@@ -1,5 +1,12 @@
 extends ../layout.pug
 block content
-  include ../components/filters.pug 
+  button( _=`on click 
+              toggle .hidden on #filters then
+              if my.innerText == 'Open Filters' 
+                set my.innerText to 'Close filters' 
+              otherwise  
+                set my.innerText to 'Open filters'`) Open Filters
+  div.hidden(id="filters")
+    include ../components/filters.pug
   div(id="data-container")
   button.button__primary(hx-get="http://localhost:8080/random-user", hx-target="#data-container") Generate user

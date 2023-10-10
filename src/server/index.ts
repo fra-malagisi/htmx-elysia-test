@@ -6,7 +6,32 @@ const app = new Elysia().use(cors());
 
 app.get("/styles.css", () => Bun.file("dist/styles.css"));
 app.get("/", () => {
-  const html = pug.renderFile("public/pages/home.pug");
+  const html = pug.renderFile("public/pages/home.pug", {
+    nationalities: [
+      { value: "", text: "-- Select a nationality" },
+      { value: "AU", text: "Australian" },
+      { value: "BR", text: "Brazilian" },
+      { value: "CA", text: "Canadian" },
+      { value: "CH", text: "Swiss" },
+      { value: "DE", text: "German" },
+      { value: "DK", text: "Danish" },
+      { value: "ES", text: "Spanish" },
+      { value: "FI", text: "Finnish" },
+      { value: "FR", text: "French" },
+      { value: "GB", text: "British" },
+      { value: "IE", text: "Irish" },
+      { value: "IN", text: "Indian" },
+      { value: "IR", text: "Iranian" },
+      { value: "MX", text: "Mexican" },
+      { value: "NL", text: "Dutch" },
+      { value: "NO", text: "Norwegian" },
+      { value: "NZ", text: "New Zealander" },
+      { value: "RS", text: "Serbian" },
+      { value: "TR", text: "Turkish" },
+      { value: "UA", text: "Ukrainian" },
+      { value: "US", text: "American" },
+    ],
+  });
   return new Response(html, { headers: { "Content-Type": "text/html" } });
 });
 

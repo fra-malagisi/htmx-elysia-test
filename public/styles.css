@@ -6,7 +6,7 @@
 /* Add your custom CSS rules here */
 
 .main {
-  @apply px-32 pt-4 flex flex-col justify-center items-center gap-2;
+  @apply px-32 pt-4 flex flex-col items-center gap-2 h-full;
 }
 
 .header {
@@ -28,5 +28,11 @@
   }
   &__picture {
     @apply rounded-full w-32 h-32;
+  }
+}
+
+filters-button {
+  &--hidden {
+    @apply hidden;
   }
 }
