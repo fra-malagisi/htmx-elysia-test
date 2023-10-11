@@ -1,5 +1,6 @@
 include ../mixins/select.pug
 form.flex.flex-col
-  div.flex.flex-col
+  div.flex.gap-4
     +select("nationality", "nationality", "Nationality", nationalities)
+    +select("gender", "gender", "Gender", genders)
 

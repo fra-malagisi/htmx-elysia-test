@@ -20,6 +20,9 @@
   &__primary {
     @apply bg-green-800 rounded-sm p-2 w-32 text-white;
   }
+  &__link {
+    @apply text-green-800 underline font-semibold;
+  }
 }
 
 .random-user {

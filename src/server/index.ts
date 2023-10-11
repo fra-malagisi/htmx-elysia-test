@@ -31,6 +31,11 @@ app.get("/", () => {
       { value: "UA", text: "Ukrainian" },
       { value: "US", text: "American" },
     ],
+    genders: [
+      { value: "", text: "-- Select a gender" },
+      { value: "M", text: "Male" },
+      { value: "F", text: "Female" },
+    ],
   });
   return new Response(html, { headers: { "Content-Type": "text/html" } });
 });

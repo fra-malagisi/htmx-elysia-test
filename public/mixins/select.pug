@@ -1,5 +1,6 @@
 mixin select(name, id, label, options)
-  label(for=`${name}`) #{label}
-  select.border.p-2(name=`${name}`, id=`${id}`)
-    each option in options
-      option(value=`${option.value}`) #{option.text}
+  div.flex.flex-col
+    label(for=`${name}`) #{label}
+    select.border.p-2(name=`${name}`, id=`${id}`)
+      each option in options
+        option(value=`${option.value}`) #{option.text}
