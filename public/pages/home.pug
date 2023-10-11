@@ -11,4 +11,7 @@ block content
   div.hidden(id="filters")
     include ../components/filters.pug
   div(id="data-container")
-  button.button__primary(hx-get="http://localhost:8080/random-user", hx-target="#data-container") Generate user
+  div.htmx-indicator(id="spinner") 
+    div.htmx-indicator__text-container
+      p Loading
+  button.button__primary(hx-get="http://localhost:8080/random-user", hx-target="#data-container", hx-indicator="#spinner") Generate user

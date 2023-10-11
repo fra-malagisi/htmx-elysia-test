@@ -1,5 +1,5 @@
 include ../mixins/select.pug
-form.flex.flex-col(hx-post="http://localhost:8080/random-user", hx-target="#data-container")
+form.flex.flex-col(hx-post="http://localhost:8080/random-user", hx-target="#data-container", hx-indicator="#spinner")
   div.flex.gap-4.justify-center.items-end
     +select("nationality", "nationality", "Nationality", nationalities)
     +select("gender", "gender", "Gender", genders)
